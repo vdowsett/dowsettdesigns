@@ -1,5 +1,20 @@
-#hero {
-    background-image: src('img/backgrounds/bokeh.jpg');
+#intro {
+    background-image: url('../img/backgrounds/ocean.png');
+}
+
+#about {
+    background-image: url('../img/backgrounds/linedpaper.png');
+}
+
+#footer {
+    background-image: url('../img/backgrounds/linen.jpg');
+    color: white;
+}
+
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .portfolio {
