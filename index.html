@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Dowsett Designs</title>
+
+  <meta name="description" content="Portfolio for Vicky Dowsett">
+  <meta name="author" content="Vicky Dowsett">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+    <script>
+        function handleLoad(e) {
+            console.log('Loaded import: ' + e.target.href);
+        }
+        function handleError(e) {
+            console.log('Error loading import: ' + e.target.href);
+        }
+    </script>
+
+    <link rel="import" href="partials/navbar.html" onload="handleLoad(event)" onerror="handleError(event)">
+    <link rel="import" href="warnings.html">
+
+</head>
+
+<body>
+  
+    <script>
+        var link = document.querySelector('link[rel="import"]');
+        var content = link.import;
+    
+        // Grab DOM from warning.html's document.
+        var el = content.querySelector('.warning');
+    
+        document.body.appendChild(el.cloneNode(true));
+    </script>
+
+  <h1>Hello World!</h1>
+</body>
+</html>
