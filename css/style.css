@@ -31,6 +31,8 @@
 
 .portfolio-item {
     position: relative;
+
+	text-align: center;
 }
 
 .portfolio-item img {
@@ -42,7 +44,7 @@
 }
 
 .portfolio-item .overlay {
-	background-color: #000;
+	background-color: #333;
 	bottom: 0;
 	height: 100%;
 	left: 0;
@@ -64,7 +66,6 @@
 	font-weight: 600;
 	line-height: 24px;
 	margin-top: 10px;
-	text-align: left;
 }
 
 .title {
@@ -72,14 +73,14 @@
 	font-size: 32px;
 	font-weight: 400;
 	line-height: 40px;
-	text-align: left;
 	text-transform: initial;
 }
 
 .divider {
 	background-color: #fff;
 	height: 1px;
-	width: 35px;
+    width: 35px;
+    margin: 0 auto;
 }
 
 .text {
